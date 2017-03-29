@@ -1,5 +1,6 @@
 #ifndef ROUTE_H
 #define ROUTE_H
+#include<vector>
 #include"city.h"
 
 
