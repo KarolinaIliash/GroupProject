@@ -1,8 +1,9 @@
 #include "city.h"
 
 void City::Read(const QJsonObject& json){
-       name = json["name"].toString();
-       coordW = json["coordW"].toDouble();
-       coordH = json["coordH"].toDouble();
+       name = json["address"].toString();
+       QJsonObject object = json["location"].toObject();
+       lat = object["lat"].toDouble();
+       lng = object["lng"].toDouble();
 }
 

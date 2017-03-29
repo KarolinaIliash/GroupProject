@@ -8,8 +8,8 @@
 class City
 {
 private:
-    double coordW;
-    double coordH;
+    double lat;
+    double lng;
     QString name;
 public:
     void Read(const QJsonObject& json);
